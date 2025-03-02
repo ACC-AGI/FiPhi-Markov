@@ -1,12 +1,13 @@
 import random
 import math
 import time
+import os
 
 
 PHI = (1 + math.sqrt(5)) / 2
 
 
-text = "Hello world this is a test."
+text = os.getenv("DATA.txt")
 words = text.split()
 chain = {}
 
